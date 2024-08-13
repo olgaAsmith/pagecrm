@@ -1,0 +1,26 @@
+@media (min-width: 980px) {
+  .pagecrm__request__form {
+    gap: 17px;
+  }
+}
+
+
+@media (min-width: 1400px) {
+  .pagecrm_request {
+    position: relative;
+    z-index: 100;
+  }
+
+  .pagecrm_request::before {
+    content: "";
+    position: absolute;
+    top: -834px;
+    left: -100px;
+    width: calc(100% + 200px);
+    height: 2270px;
+    background-image: url(../../../images/vector-big.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+}

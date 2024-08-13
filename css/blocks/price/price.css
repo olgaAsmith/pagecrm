@@ -1,0 +1,172 @@
+.pagecrm_price__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 45px;
+}
+
+.pagecrm_price__item {
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 20px 0 #d795ff, 0 0 4px 0 #d795ff;
+  box-shadow: 0 0 20px 0 #d795ff, 0 0 4px 0 #d795ff;
+  padding: 18px 12px;
+  border: 1px solid transparent;
+  background: -webkit-gradient(linear, left bottom, right top, from(#211B41), to(#633892)) padding-box, -webkit-gradient(linear, left top, right bottom, from(#B195FF), to(#D795FF)) border-box;
+  background: -o-linear-gradient(left bottom, #211B41, #633892) padding-box, -o-linear-gradient(left top, #B195FF, #D795FF) border-box;
+  background: linear-gradient(to right top, #211B41, #633892) padding-box, linear-gradient(to right bottom, #B195FF, #D795FF) border-box;
+}
+
+.pagecrm_price__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgba(158, 0, 255, 0.15);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.pagecrm_price__title {
+  font-weight: 400;
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+.pagecrm_price__cost {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: right;
+  background: -o-linear-gradient(293deg, #b195ff 0%, #d795ff 100%);
+  background: linear-gradient(157deg, #b195ff 0%, #d795ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-wrap: nowrap;
+}
+
+.pagecrm_price__features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.pagecrm_price__features-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.pagecrm_price__checkbox {
+  min-width: 20px;
+  min-height: 20px;
+  background-image: url(../../../images/check-circle.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.pagecrm_price_gradient {
+  width: 206px;
+  margin: 20px auto 0;
+}
+
+.pagecrm_price__button {
+  margin: 25px auto 0;
+  padding: 19px 50px;
+}
+
+@media (min-width: 640px) {
+  .pagecrm_price__item {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 980px) {
+  .pagecrm_price__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 75px;
+  }
+
+  .pagecrm_price__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 690px;
+    border-radius: 20px;
+    background: -webkit-gradient(linear, right top, left bottom, color-stop(60%, #281856), to(#6857BD)) padding-box, -webkit-gradient(linear, left top, right bottom, from(#B195FF), to(#D795FF)) border-box;
+    background: -o-linear-gradient(right top, #281856 60%, #6857BD) padding-box, -o-linear-gradient(left top, #B195FF, #D795FF) border-box;
+    background: linear-gradient(to left bottom, #281856 60%, #6857BD) padding-box, linear-gradient(to right bottom, #B195FF, #D795FF) border-box;
+    padding: 35px;
+  }
+
+  .pagecrm_price__title {
+    width: 50%;
+    font-size: 24px;
+  }
+
+  .pagecrm_price__cost {
+    font-size: 36px;
+    line-height: 1.83;
+  }
+
+  .pagecrm_price__checkbox-name {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .pagecrm_price__name {
+    padding: 20px;
+  }
+
+  .pagecrm_price__checkbox {
+    min-width: 28px;
+    min-height: 28px;
+  }
+
+  .pagecrm_price__button {
+    width: 292px;
+    font-size: 24px;
+    margin-top: 40px;
+  }
+
+  .pagecrm_price__features {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    gap: 20px;
+  }
+}

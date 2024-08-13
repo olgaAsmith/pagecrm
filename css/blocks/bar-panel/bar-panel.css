@@ -1,0 +1,81 @@
+.pagecrm_bar-panel {
+  position: fixed;
+  top: 212px;
+  right: 0;
+  -webkit-transition: right .4s;
+  -o-transition: right .4s;
+  transition: right .4s;
+  z-index: 100;
+}
+
+.pagecrm_bar-panel-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 25px;
+  width: 48px;
+  border-radius: 15px 0 0 15px;
+  background: rgba(29, 1, 65, 0.3);
+  padding: 13px 5px;
+}
+
+.pagecrm_bar-panel-item {
+  position: relative;
+  width: 100%;
+  height: 23px;
+}
+
+.pagecrm_bar-panel-item-call {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+}
+
+.pagecrm_bar-panel-item:hover,
+.pagecrm_bar-panel-item-call:hover {
+  opacity: .6;
+}
+
+.pagecrm_bar-panel-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -11px;
+  width: 100%;
+  height: 1px;
+  background-color: #ECECEC;
+}
+
+.pagecrm_bar-panel-item:last-of-type::before {
+  display: none;
+}
+
+.pagecrm_bar-panel-pic {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -webkit-filter:
+    drop-shadow(0px 0px 10.62px #00FFE1) drop-shadow(0px 0px 3.03px #00FFE1) drop-shadow(0px 0px 1.52px #00FFE1);
+  filter:
+    drop-shadow(0px 0px 10.62px #00FFE1) drop-shadow(0px 0px 3.03px #00FFE1) drop-shadow(0px 0px 1.52px #00FFE1);
+  z-index: 100;
+}
+
+.bar-panel--hidden {
+  right: -1000px;
+}
+
+@media (min-width: 980px) {
+  .pagecrm_bar-panel {
+    top: 185px;
+  }
+}

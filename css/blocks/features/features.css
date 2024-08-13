@@ -1,0 +1,93 @@
+.pagecrm_features-list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 20px 0 0 20px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(177, 149, 255, 0.3)), color-stop(75%, rgba(44, 48, 83, 0)));
+  background: -o-linear-gradient(left, rgba(177, 149, 255, 0.3) 0%, rgba(44, 48, 83, 0) 75%);
+  background: linear-gradient(90deg, rgba(177, 149, 255, 0.3) 0%, rgba(44, 48, 83, 0) 75%);
+  margin-top: 45px;
+  padding: 12px 22px;
+}
+
+.pagecrm_features-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  padding: 12px 0;
+}
+
+.pagecrm-features-check {
+  min-width: 49px;
+  min-height: 49px;
+  background-image: url(../../../images/features-checkbox.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.pagecrm_features__pic {
+  display: none;
+}
+
+.pagecrm_features__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (min-width: 980px) {
+  .pagecrm-features-text {
+    font-size: 36px;
+    line-height: 1.11;
+  }
+}
+
+@media (min-width: 1400px) {
+  .pagecrm_features__container {
+    margin-top: 40px
+  }
+
+  .pagecrm_features-list {
+    border-radius: 40px 0 0 40px;
+    margin-top: 0;
+    padding: 57px 59px;
+  }
+
+  .pagecrm_features__pic {
+    display: block;
+    min-width: 491px;
+    height: 614px;
+    background-image: url(../../../images/smartphone.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .pagecrm-features-check {
+    min-width: 100px;
+    min-height: 110px;
+  }
+
+  .pagecrm_features {
+    position: relative;
+    z-index: 200;
+
+  }
+}

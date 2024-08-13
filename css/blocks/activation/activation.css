@@ -1,0 +1,94 @@
+.pagecrm_activation-mini-title {
+  margin-top: 5px;
+}
+
+.pagecrm_activation__form-border {
+  border-radius: 32px;
+  border: 2px solid transparent;
+  background: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      from(transparent),
+      to(transparent)) padding-box,
+    -webkit-gradient(linear,
+      right top,
+      left bottom,
+      from(#fff),
+      color-stop(52%, #d795ff),
+      to(#7bc2fe)) border-box;
+  background: -o-linear-gradient(transparent, transparent) padding-box,
+    -o-linear-gradient(right top, #fff, #d795ff 52%, #7bc2fe 100%) border-box;
+  background: linear-gradient(transparent, transparent) padding-box,
+    linear-gradient(to left bottom, #fff, #d795ff 52%, #7bc2fe 100%) border-box;
+  margin-top: 45px;
+}
+
+
+.pagecrm_activation__button {
+  padding: 16px 10px;
+}
+
+@media (min-width: 640px) {
+  .pagecrm_activation__form-border {
+    max-width: 600px;
+    margin: 38px auto 0;
+  }
+}
+
+@media (min-width: 980px) {
+  .pagecrm_activation-mini-title {
+    margin-top: 0;
+  }
+
+  .pagecrm_activation__form-border {
+    max-width: 800px;
+    margin-top: 68px;
+  }
+
+  .pagecrm_activation__form {
+    padding: 44px 86px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .pagecrm_activation__form-border {
+    position: relative;
+    max-width: none;
+    width: 912px;
+  }
+
+  .pagecrm_activation__form {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    background: -webkit-gradient(linear,
+        right top,
+        left bottom,
+        from(#a17acb),
+        to(#6d50a4));
+    background: -o-linear-gradient(right top, #a17acb, #6d50a4);
+    background: linear-gradient(to left bottom, #a17acb, #6d50a4);
+  }
+
+  .pagecrm_activation__form__titles,
+  .pagecrm_activation__form__elements {
+    width: 398px;
+  }
+
+  .pagecrm_activation__form-border::before {
+    content: '';
+    position: absolute;
+    top: 42px;
+    right: -137px;
+    width: 500px;
+    height: 448px;
+    background-image: url(../../../images/planet.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .pagecrm_activation__form {
+    gap: 10px;
+  }
+}
